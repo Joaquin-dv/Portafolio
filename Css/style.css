@@ -34,6 +34,10 @@ li{
     width: 60vw;
     margin: auto;
     display: flex;
+    border: solid 1px black;
+    border-radius: 3vw;
+    padding: 30px;
+    background-color: bisque;
 }
 
 aside{

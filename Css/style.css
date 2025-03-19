@@ -6,69 +6,83 @@
 }
 
 body{
-    background-color: rgb(255, 255, 255);
-}
-
-header{
-    height: 25px;
-    width: 100%;
-    margin-bottom: 5vh;
-}
-
-img{
-    border-radius: 50%;
-    height: 20%;
-}
-
-a{
-    text-decoration: none;
-    color: blue;
-}
-
-li{
-    list-style-type: none
-}
-
-.main-container{
-    height: 70vh;
-    width: 60vw;
-    margin: auto;
+    /* height: 100vh; del viewport height  (area visible del navegador) */
+    /* width: 100vw; del viewport width */
+    /*UTILIZAR ESTAS UNIDADES UNICAMENTE EN EL BODY*/
     display: flex;
-    border: solid 1px black;
-    border-radius: 3vw;
-    padding: 30px;
-    background-color: bisque;
+}
+
+main{
+    width: 60%;
+    background-color: violet;
+
 }
 
 aside{
-    padding-top: 20px;
-    float: left;
+    float: right;
+    width: 40%;
     height: 100%;
-    width: 30%;
-    border: 1px black solid;
-    border-radius: 2vw;
-    background-color:blanchedalmond;
+    background-color: green;
 }
 
+.perfil{
+    padding: 1em;
+    height: 200px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    place-items: center;
 
-
-section{
-    text-align: center;
+    .foto{
+        box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+        border: double 10px pink ;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .datos{
+        text-align: center;
+    }
 }
 
-div{
-    padding-left: 10px;
+aside > section{
+    padding: 2em;
 }
 
-div> section{
-    margin-left: 5px ;
-    margin-bottom: 3vh ;
-    border: solid 1px black;
-    border-radius: 3vw;
-    background-color: blanchedalmond;
+.datosPersonales{
+    width: 100%;
+    background-color: aqua;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .listaDP{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        /* list-style-type: none; */
+        li{
+            list-style: none;
+        }
+    }
 }
 
-#titulo{
-    text-align: center;
-    font-size: 30px;
+.redes{
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+.educacion{
+    width: 100%;
+    background-color: red;
 }

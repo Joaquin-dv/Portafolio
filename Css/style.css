@@ -10,12 +10,12 @@ body{
     /* width: 100vw; del viewport width */
     /*UTILIZAR ESTAS UNIDADES UNICAMENTE EN EL BODY*/
     display: flex;
+    /* width: 700px; */
+    justify-self: center;
 }
 
 main{
     width: 60%;
-    background-color: violet;
-
 }
 
 aside{
@@ -35,9 +35,8 @@ aside{
 
     .foto{
         box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
-        border: double 10px pink ;
-        height: 100px;
-        width: 100px;
+        border: 10px  ;
+        height: 160px;
         border-radius: 50%;
         overflow: hidden;
         img{
@@ -48,16 +47,25 @@ aside{
     }
     .datos{
         text-align: center;
+        margin-top: 1em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 25px;
     }
+}
+
+.profile-txt{
+    display: flexbox;
 }
 
 aside > section{
     padding: 2em;
+    text-wrap: wrap;
+    overflow-wrap: break-word;
 }
 
 .datosPersonales{
     width: 100%;
-    background-color: aqua;
+    background-color: #79ebd4;
     a{
         text-decoration: none;
         color: black;
@@ -71,18 +79,96 @@ aside > section{
         li{
             list-style: none;
         }
+
+        
     }
 }
 
 .redes{
     width: 100%;
-    background-color: white;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     
+    i{
+        font-size: 30px;
+    }
 }
 
 .educacion{
     width: 100%;
+}
+
+.bg-oscuro{
+    background-color: #092439;
+}
+
+.txt-blanco{
+    color:white;
+}
+
+.txt-oscuro{
+    color: #1c364a;
+}
+
+.contenedorFlexbox{
+    margin-top:20vh;
+    background-color: #ccd3c6;
+    display: flex;
+    overflow-x: auto;
+    gap: 10px; /* Espacio entre elementos */
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 400px;
+}
+
+
+.tarjeta{
+    height: 320px;
+    background-color: rgb(111, 158, 117);
+    color: white; 
+    border-radius: 1em;
+    padding: 1em;
+    box-shadow: 0 0 10px 0;
+    /* flex-basis: 100%; Para que el hijo de contenedor flexbox ocupe todo el ancho. */
+    flex-grow: 1; /* Para que se expanda.  default 1*/
+    flex-shrink: 1; /* Para que no se encoja.  default 1*/
+    flex: 0 1 100px; /* primer param "GROW" segundo param "SHRINK", tercer param "BASIS"*/
+}
+
+.tarjeta:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 20px 0 black;
+    transition: all .15s ease-out;
+    cursor: pointer;
+}
+
+/* .tarjeta:first-of-type{
+    Los primeros que aparezcan en cada contenedor
+} */
+
+/* .tarjeta:nth-child(even / odd){
+    aplica a los pares si es "even"
+    aplica a los impares si es "odd"
+} */
+
+/*.tarjeta:nth-child(3){
+    Aplica al tercer numero de la primera serie (aparicion)
+} */
+
+.tarjeta:first-child{
     background-color: red;
+    display: flex;
+}
+
+.tarjetaTitulo{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.tarjetaContenido{
+    font-size: 1em;
+    background-color: white;
+    color: gray;
+    padding: 1em;
+    border-radius: 1em;
 }

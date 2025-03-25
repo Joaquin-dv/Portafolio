@@ -10,7 +10,7 @@ body{
     /* width: 100vw; del viewport width */
     /*UTILIZAR ESTAS UNIDADES UNICAMENTE EN EL BODY*/
     display: flex;
-    /* width: 700px; */
+    width: 700px;
     justify-self: center;
 }
 
@@ -27,12 +27,25 @@ aside{
 
 .perfil{
     padding: 1em;
-    height: 200px;
+    margin-bottom: 3em;
     width: 100%;
     background-color: rgb(255, 255, 255);
     display: grid;
     place-items: center;
 
+    span{
+        float: none;
+        position: relative;
+        content: '';
+        background-color: #79ebd4;
+        height: 10px;
+        width: 100%;
+        
+    }
+    #barra1{
+        margin-top: 4em;
+    }
+    
     .foto{
         box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
         border: 10px  ;
@@ -55,6 +68,7 @@ aside{
 
 .profile-txt{
     display: flexbox;
+    margin-bottom: 20px;
 }
 
 aside > section{
@@ -72,6 +86,7 @@ aside > section{
     }
 
     .listaDP{
+        margin-top: 1em;
         display: flex;
         flex-direction: column;
         gap: 1em;
@@ -96,6 +111,11 @@ aside > section{
 
 .educacion{
     width: 100%;
+    li{
+        list-style:circle;
+        font-size: 10px;
+        color: rgb(180, 180, 180);
+    }
 }
 
 .bg-oscuro{
@@ -109,6 +129,41 @@ aside > section{
 .txt-oscuro{
     color: #1c364a;
 }
+
+.experiencia{
+    display: flex;
+}
+
+.tiempo{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    text-align: center;
+    width: 5em;
+
+    div{
+        background-color: #092439;
+        border: 1px solid #092439;
+        padding: 10px;
+        border-radius: 1em;
+        border-style: double;
+    }
+}
+
+.texto-experiencia {
+    margin-top: 2em;
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2em;
+
+    li{
+        list-style:circle;
+        font-size: 10px;
+    }
+}
+
 
 .contenedorFlexbox{
     margin-top:20vh;

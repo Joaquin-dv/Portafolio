@@ -29,10 +29,3 @@
         height: 10px;
     }
 }
-
-/* ARREGLAR HOVER */
-.tarjeta:hover{
-    transition: all;
-    transform: scale(0.01);
-    cursor: pointer;
-}

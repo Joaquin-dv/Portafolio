@@ -1,0 +1,128 @@
+@import url(../../Assets/css/tipografias.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(131, 125, 125);
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tarjeta{
+    margin-top: 0.7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .8em;
+    position: relative;
+}
+
+.plus{
+    background-color: #FF5D78;
+    color: white;
+    font-size: 35px;
+    font-weight: 1px;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    display: grid;
+    place-items: center;
+    top: 190px;
+    right: -25px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 1px #FF5D78;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.arriba{
+    background-color: #F2F1F6;
+    border-radius: .8em .8em 0 0;
+    height: 350px;
+    width: 300px;
+    padding: 1em;
+    /* background-color:aquamarine; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+    img{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
+    div{
+        color: #C1C1C1;
+    }
+}
+
+.abajo{
+    background-color: #F9F9FD;
+    border-radius: 0 0 .8em .8em;
+    /* background-color:bisque; */
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 300px;
+    padding: 1em;
+    align-items: center;
+    justify-content: space-between;
+    .numeros{
+        article{
+            min-width: 86px;
+            h5{
+                color: #C1C1C1;
+            }
+        }
+        font-size: 0.8em;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    button{
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .send{
+        width: 150px;
+        height: 40px;
+        padding: .7em;
+        border-radius: 30px;
+        border: none;
+        background-color: #48BDBD;
+        color: white;
+    }
+
+    .more{
+        background-color: transparent;
+        border: none;
+        align-items: center;
+        span{
+            color: #929191;
+        }
+    }
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/* .cuadrado{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    position: absolute;
+    top:50%;
+} */

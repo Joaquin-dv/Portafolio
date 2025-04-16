@@ -1,0 +1,16 @@
+@import url("../../Assets/css/mainStyle.css");
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        a{
+            color: black;
+        }
+    }
+}

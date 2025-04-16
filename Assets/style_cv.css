@@ -1,0 +1,84 @@
+@import url("./css/mainStyle.css");
+
+body {
+    color: rgb(255, 255, 255);
+    padding-top: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 1em;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background: #0f0c29;
+    background: -moz-linear-gradient(left, #0f0c29 0%, #302b63 100%);
+    background: -webkit-linear-gradient(left, #0f0c29 0%, #302b63 100%);
+    background: linear-gradient(to right, #0f0c29 0%, #302b63 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0f0c29', endColorstr='#302b63', GradientType=1);
+    position: relative;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+
+}
+
+
+
+main {
+    display: flex;
+    flex: 1;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tarjeta {
+    border: solid 2px #3A3A50;
+    box-shadow: 3px 4px 15px -0px blue;
+    color: rgb(255, 255, 255);
+    background-color: rgb(187, 196, 196);
+    text-decoration: none;
+    border-radius: 0.75em;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 250px;
+    overflow: hidden;
+
+    .titulo {
+        height: fit-content;
+        background: linear-gradient(to right,blue,rgb(155, 86, 155));
+        overflow: hidden;
+        padding: 0.5em;
+    }
+
+    .imagen {
+        img {
+            object-fit: cover;
+            height: 200%;
+        }
+        height: 170px;
+        align-self: center;
+        overflow: hidden;
+    }
+
+    .descripcion {
+        background: linear-gradient(to right,blue,rgb(155, 86, 155));
+        height: fit-content;
+        padding: 0.5em;
+
+    }
+}
+
+.tarjeta:hover{
+    transform: scale(1.02);
+}
+
+footer{
+    position: sticky;
+    bottom: 0;
+}

@@ -7,10 +7,6 @@ body{
     place-items: center;
 }
 
-#inputNuevo{
-    display: none;
-}
-
 main{
     width: 700px;
     display: flex;
@@ -18,6 +14,11 @@ main{
     align-items: center;
     padding: 1em;
     gap: 5em;
+}
+
+a{
+    text-decoration: dashed;
+    color: blue;
 }
 
 /* Telefono */

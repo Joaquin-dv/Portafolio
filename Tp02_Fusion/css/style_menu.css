@@ -6,6 +6,9 @@ ul{
     flex-direction: row;
     align-items: center;
 }
+i{
+    font-size: 1.2em;
+}
 header{
     display: flex;
     flex-direction: column;
@@ -23,13 +26,12 @@ header > div{
 
     ul{
         gap: 10px;
-        li{
-            font-size: 1em;
-        }
     }
 }
 
 navbar{
+    padding-left: 1em;
+    padding-right: 1em;
     display: flex;
     ul{
         gap: 1em;
@@ -45,13 +47,16 @@ navbar{
 }
 
 main{
+    margin-top: 1em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 1em;
 }
 
 .card{
+    border-radius: 1em;
     background-color: bisque;
     height: 150px;
     display: flex;
@@ -96,7 +101,10 @@ main{
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 500px){
+    ::-webkit-scrollbar {
+        display: none;
+    }
     main{
         flex-direction: column;
     }

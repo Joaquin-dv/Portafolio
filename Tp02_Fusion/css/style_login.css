@@ -7,6 +7,10 @@ body{
     place-items: center;
 }
 
+#inputNuevo{
+    display: none;
+}
+
 main{
     width: 700px;
     display: flex;

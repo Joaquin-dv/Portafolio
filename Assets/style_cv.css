@@ -80,5 +80,9 @@ main {
 
 footer{
     position: sticky;
-    bottom: 0;
+    bottom: 1;
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
